@@ -1,73 +1,21 @@
-# React + TypeScript + Vite
+# Sovereign QA Suite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Sovereign QA Suite** هو أداة متطورة ومخصصة لأتمتة عمليات الاختبار (Test Automation)، صُممت لرفع كفاءة الجودة والأمان في تطبيقات الويب. يدمج المشروع بين أدوات أتمتة الاختبارات الوظيفية وفحص الثغرات الأمنية في واجهة واحدة مبنية بأحدث تقنيات الويب.
 
-Currently, two official plugins are available:
+## 🚀 المميزات الرئيسية
+* **Security Scanning:** وحدة متخصصة لفحص الثغرات الأمنية تلقائياً.
+* **Modern Architecture:** مبني باستخدام `TypeScript` و `Vite` لضمان أداء فائق.
+* **Scalable Testing:** هيكلية معيارية تسمح بإضافة أدوات اختبار جديدة بسهولة.
+* **Performance Focused:** واجهة مستخدم سريعة وعصرية باستخدام `Tailwind CSS`.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠 التكنولوجيا المستخدمة
+* **Frontend:** React, TypeScript, Tailwind CSS, Vite.
+* **Backend & DB:** Drizzle ORM, trpc.
+* **Tools:** ESLint for code quality, Prettier for formatting.
 
-## React Compiler
+## 📦 كيفية التشغيل محلياً
+لتشغيل المشروع على جهازك، اتبع الخطوات التالية:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. قم بعمل clone للمشروع:
+```bash
+   git clone [https://github.com/mahamoudhelaly/Sovereign-QA-Suite.git](https://github.com/mahamoudhelaly/Sovereign-QA-Suite.git)
